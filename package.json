@@ -1,0 +1,28 @@
+{
+  "name": "farcap-geocoder",
+  "version": "0.0.1",
+  "description": "Geocoder",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnTigue/farcap-geocoder.git"
+  },
+  "author": "John Tigue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnTigue/farcap-geocoder/issues"
+  },
+  "homepage": "https://github.com/JohnTigue/farcap-geocoder#readme",
+  "devDependencies": {
+    "must": "^0.13.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.1.1"
+  }
+}

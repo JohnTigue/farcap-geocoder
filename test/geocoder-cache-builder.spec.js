@@ -1,6 +1,7 @@
 /* global console, require, describe, context, before, beforeEach, after, afterEach, it */
 
 
+/*
 Actually, this is a geocoder-cache-builder.spec.js (yup, already changed that name)
 a geocoder-cache-builder.js builds a cache; how the 
 cache is used is a separate issue/concern. The cache could
@@ -12,6 +13,7 @@ a geocoder-precache-builder is wrong.
 Combined with a browser storage persistence mechanism and 
 a rate limiter, the OSM folks might very much like to 
 promote it.
+*/
 
 
 /** geocoder-cache-builder.spec.js is a command-line utility useful
@@ -36,8 +38,11 @@ promote it.
 describe('geocoder-cache-builder.spec.js', function(){
   'use strict';
 
-  var bunyan = require('bunyan');
-  var logger = bunyan.createLogger({name: 'myapp'});
+  //var bunyan = require('bunyan');
+  var logger = {};// i.e. just hack something until Bunyan is replaced: bunyan.createLogger({name: 'myapp'});
+    logger.debug = function(){};
+    logger.level = function(){};
+
   logger.level('debug');
   
   // JFT-TODO: if sticking with Must.js then add it to dev-deps
