@@ -227,7 +227,7 @@ function DEAD_makePromiseForLoc(aName){
 
 /* Ripped straight out of Control.Geocoder.js geocode(), re-formatted a bit. 
  * This just rearranges the data a bit, parses strings to numbers, and Leaflets it up (the unbound var L)
- */
+ */ 
 function parseNominatimResponse(aResponseBody){
   var results = [];
   var data = JSON.parse(aResponseBody);
